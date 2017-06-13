@@ -1,4 +1,4 @@
-function echo(a,b)
+function merge(a,b)
 {
-	return a+b;
+	return a+ " " + b;
 }
