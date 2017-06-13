@@ -10,6 +10,12 @@ function GetRecentBuildId(jsonString,key)
 { 
   return JSON.parse(jsonString).value[0].id;
 } 
+
+function GetTestResults(jsonString,key)
+{
+	var obj=JSON.parse(jsonString);
+	return JSON.stringify(obj.aggregatedResultsAnalysis.resultsByOutcome);
+} 
 function GetCodeCoverage(jsonString,key)
 {	
 	var obj=JSON.parse(jsonString);
