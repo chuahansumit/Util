@@ -10,7 +10,7 @@ function GetRecentBuildId(jsonString,key)
 { 
   return JSON.parse(jsonString).value[0].id;
 } 
-function GetBlocksCovered(jsonString,key)
+function GetCodeCoverage(jsonString,key)
 {	
 	var obj=JSON.parse(jsonString);
 	var result={};
